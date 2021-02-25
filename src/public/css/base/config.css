@@ -1,0 +1,10 @@
+* {
+  font-weight: 600;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 48px - 128px);
+}
