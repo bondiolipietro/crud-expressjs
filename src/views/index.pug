@@ -3,9 +3,29 @@ html(lang="en")
   head
     title= 'Crud - ExpressJs'
     meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    link(rel='stylesheet' href='/public/css/navbar.css' type='text/css')
-    link(rel='stylesheet' href='/public/css/style.css' type='text/css')
+    include includes/head.pug
+    link(rel='stylesheet' href='/public/css/pages/home.css' type='text/css')
   body
     include includes/header.pug
-    main Hello World!
+
+    main.main
+      div.crud_container
+        div.container_options
+          a(href="/add-user").add_button add
+        table.container_table
+          thead
+            tr
+              th ID
+              th Date
+              th Exercises
+              th Options
+          tbody
+            tr
+              td ID
+              td Date
+              td Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+              td
+                a(href="/update-user" data-id="1").edit_button edit
+                a(href="#" data-id="1").delete_button delete
+
+    include includes/footer.pug
