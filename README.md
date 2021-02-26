@@ -4,11 +4,11 @@ I'm creating this application in order to test my express.Js skills and also to 
 ## Installation
 Running express server in development mode with nodemon (hot reload):
 ```
-yarn dev
+yarn && yarn dev
 ```
 or you can just run it in production mode:
 ```
-yarn build && yarn start
+yarn && yarn build && yarn start
 ```
 
 ## Author

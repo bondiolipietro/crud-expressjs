@@ -5,8 +5,8 @@ const router = express.Router();
 
 router.get('/', render.home);
 
-router.get('/add-user', render.add_user);
+router.get('/add-workout', render.add_workout);
 
-router.get('/update-user', render.update_user);
+router.get('/update-workout', render.update_workout);
 
 export default router

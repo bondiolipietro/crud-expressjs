@@ -1,0 +1,10 @@
+mixin form(method, submit)
+  form(action="/api/users" method=method).container__form
+    div.form__group
+      label(for="date").form_label Date
+      input(name="date" id="date" type="date" min="2021-01-01" required autofocus).form_input.form_date_input
+    div.form__group
+      label(for="exercises").form_label Exercises
+      textarea(name="exercises" id="exercises" placeholder="Go ahead..." minlength="10" maxlength="3000" required).form_input.form_exercises_input
+    div.form__group
+      input(type="submit" value=submit).form_input.form_submit_input

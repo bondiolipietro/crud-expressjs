@@ -1,0 +1,35 @@
+.container__form {
+  width: 60%;
+}
+
+.container__form, .form__group {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 24px;
+}
+
+.form_label {
+  font-size: 20px;
+}
+
+.form_input {
+  font-size: 14px;
+  border: none;
+  padding: 12px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px 1px #1b202726;
+  transition: all 200ms ease-in-out;
+}
+
+.form_input:focus, .form_submit_input:hover {
+  box-shadow: 0px 0px 2px 1px #1b20274d;
+  outline: none;
+}
+
+.form_exercises_input {
+  min-height: 350px;
+}
+
+.form_date_input, .form_submit_input {
+  cursor: pointer;
+}

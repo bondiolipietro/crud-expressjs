@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    title= 'Crud - ExpressJs'
+    meta(charset="UTF-8")
+    include includes/head.pug
+    link(rel='stylesheet' href='/public/css/components/form.css' type='text/css')
+    link(rel='stylesheet' href='/public/css/pages/update_workout.css' type='text/css')
+  body
+    include includes/header.pug
+
+    main.main
+      div.crud_container
+        include mixins/container_menu
+        +container_menu("UPDATE")
+        include mixins/form
+        +form("PUT", "UPDATE")
+
+    include includes/footer.pug
+    include includes/scripts.pug
