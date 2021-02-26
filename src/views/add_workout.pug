@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    title= 'Add'
+    meta(charset="UTF-8")
+    include includes/head.pug
+    link(rel='stylesheet' href='/public/css/components/form.css' type='text/css')
+    link(rel='stylesheet' href='/public/css/pages/add_workout.css' type='text/css')
+  body
+    include includes/header.pug
+
+    main.main
+      div.crud_container
+        include mixins/container_menu
+        +container_menu("ADD")
+        include mixins/form
+        +form("POST", "ADD")
+
+    include includes/footer.pug
+    include includes/scripts.pug
