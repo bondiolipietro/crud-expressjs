@@ -28,6 +28,8 @@
 
 .form_exercises_input {
   min-height: 350px;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 
 .form_date_input, .form_submit_input {

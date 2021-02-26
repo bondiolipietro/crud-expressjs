@@ -1,6 +1,6 @@
-mixin form(method, submit, id, date, exercises)
+mixin form(submitText, id, date, exercises)
   - id = id || ""
-  form(action="/api/users/" + id method=method).container__form
+  form(action="/api/workout/" + id method="POST").container__form
     div.form__group
       input(name="id" id="id" type="hidden" value=id)
     div.form__group
@@ -10,4 +10,4 @@ mixin form(method, submit, id, date, exercises)
       label(for="exercises").form_label Exercises
       textarea(name="exercises" id="exercises" placeholder="Go ahead..." minlength="10" maxlength="3000" required).form_input.form_exercises_input= exercises
     div.form__group
-      input(type="submit" value=submit).form_input.form_submit_input
+      input(type="submit" value=submitText).form_input.form_submit_input

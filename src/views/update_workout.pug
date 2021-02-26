@@ -14,9 +14,8 @@ html(lang="en")
         +container_menu("UPDATE")
         include mixins/form
         if workout
-          +form("PUT", "UPDATE", workout.id, workout.date, workout.exercises)
+          +form("UPDATE", workout.id, workout.date, workout.exercises)
         else
-          +form("PUT", "UPDATE")
+          +form("UPDATE")
 
     include includes/footer.pug
-    include includes/scripts.pug
