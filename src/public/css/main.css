@@ -1,4 +1,4 @@
-@import './base/sanitize.css';
+@import './base/reset.css';
 @import './base/config.css';
 
 @import './components/navbar.css';
