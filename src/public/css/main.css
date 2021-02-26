@@ -3,3 +3,5 @@
 
 @import './components/navbar.css';
 @import './components/footer.css';
+@import './components/crud_container.css';
+@import './components/container_menu.css';
