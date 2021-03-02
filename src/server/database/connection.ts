@@ -1,7 +1,12 @@
+import fs from 'fs';
 import path from 'path';
 const sqlite3 = require('sqlite3').verbose();
 
 const dbPath = path.resolve(__dirname, 'db/crud.db');
+
+if (!fs.existsSync(dbPath)){
+  fs.mkdirSync(path.join(__dirname, "db"));
+}
 
 const crudDb = new sqlite3.Database(
   dbPath,

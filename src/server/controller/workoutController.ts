@@ -50,11 +50,7 @@ const findByIdAndUpdate = (req: Request, res: Response) => {
     if (err) {
       res.status(500).send({ message: `Could not find Workout with id=${id}` });
     }
-<<<<<<< HEAD
     res.redirect('/');
-=======
-    res.send({ message: 'Workout was updated successfully!' });
->>>>>>> 02dc276 (feat: created 'workout' table Controller, added api routes in the 'router', updated 'render' methods)
   });
 };
 
