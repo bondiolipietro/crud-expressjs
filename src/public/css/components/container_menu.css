@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 12px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--default-black);
 }
 
 .container_menu > * {
@@ -11,13 +11,14 @@
 }
 
 .menu__button {
-  color: #10306b;
+  color: var(--secondary-color);
   text-decoration: none;
   padding: 6px 0;
+  transition: all 300ms ease-in-out;
 }
 
 .menu__button:hover {
-  color: #24498f;
+  color: var(--regular-text);
 }
 
 .menu__title {

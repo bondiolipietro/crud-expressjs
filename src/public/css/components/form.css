@@ -17,12 +17,12 @@
   border: none;
   padding: 12px;
   border-radius: 3px;
-  box-shadow: 0px 0px 2px 1px #1b202726;
+  box-shadow: 0px 0px 2px 1px var(--weak-shadow);
   transition: all 200ms ease-in-out;
 }
 
 .form_input:focus, .form_submit_input:hover {
-  box-shadow: 0px 0px 2px 1px #1b20274d;
+  box-shadow: 0px 0px 2px 1px var(--strong-shadow);
   outline: none;
 }
 
