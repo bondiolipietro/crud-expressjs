@@ -1,12 +1,17 @@
 import { Request, Response } from 'express';
 import axios from 'axios';
 import PORT from '../config/port';
+import handleViewDate from '../util/date/handleViewDate';
+import handleViewExercises from '../util/exercises/handleViewExercises';
 
 const home = (req: Request, res: Response) => {
   axios
     .get(`http://localhost:${PORT}/api/workout`)
     .then((response) => {
-      res.render('index', { workout_list: response.data });
+      let workout_list;
+      workout_list = handleViewDate(response.data);
+      workout_list = handleViewExercises(workout_list);
+      res.render('index', { workout_list });
     })
     .catch((err) => {
       res.send(err);

@@ -29,8 +29,6 @@ const find = (req: Request, res: Response) => {
   } else {
     const sql = 'SELECT * FROM workout ORDER BY date DESC;';
 
-    console.log('query all');
-
     crudDb.all(sql, (err: Error, rows: any) => {
       if (err) {
         res.status(500).send({ message: `Could not find any Workout` });

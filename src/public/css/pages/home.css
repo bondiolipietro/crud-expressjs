@@ -30,12 +30,13 @@
   color: #fff;
 }
 
-.container__table td {
+.container__table td.date {
   text-align: center;
 }
 
 .container__table td.exercises {
   word-break: break-all;
+  white-space: pre-wrap;
 }
 
 .edit_button,

@@ -1,7 +1,7 @@
 mixin table_row(id, date, exercises)
   tr
-    td= date
-    td(class="exercises")= exercises
+    td.date= date
+    td.exercises= exercises
     td
       a(href="/update-workout?id=" + id data-id=id).edit_button EDIT
       div(data-id=id).delete_button DELETE
