@@ -15,4 +15,4 @@ yarn && yarn build && yarn start
 - Pietro Bondioli ([@bondiolipietro](https://github.com/bondiolipietro))
 
 ## License
-[MIT](LICENSE)
+[MIT](https://opensource.org/licenses/MIT)
